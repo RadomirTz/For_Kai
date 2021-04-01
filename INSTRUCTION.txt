@@ -1,0 +1,6 @@
+Для запуска изначально перейдите в консоли по адресу: C:\Users\Radomir\Desktop\kai\For_Kai
+И установите зависимости из файла requirments
+После этого пропишите python app.py
+В другом окне перейдите по C:\Users\Radomir\Desktop\kai\For_Kai\client
+И пропишите npm run dev
+
