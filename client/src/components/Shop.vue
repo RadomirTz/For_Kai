@@ -3,7 +3,7 @@
         <h1><a href='http://localhost:8080/#/wiki'><button style='margin-left:10px;border-color: black; background-color: #001e24;font-size:10px' type="button" class="btn btn-primary">←</button></a>{{title.substring(1, title.length-1)}}</h1>
         <div style=' position: absolute; margin-left: 800px'>
             <img :src='image' height='30%' width='30%' style='border-radius: 10px;'>
-            <p style='margin-left: 30px'>{{title.substring(1, title.length-1)}}</p>
+            <p style='margin-left: 70px'>{{title.substring(1, title.length-1)}}</p>
         </div>
         
         <br>

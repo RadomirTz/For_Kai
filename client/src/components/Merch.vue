@@ -7,8 +7,9 @@
             <div class="container">
                 <div  style='' v-for="(item, index) in items" :key="index">
                     <div style='float:left;border-radius: 10px; margin-left:50px; background-color:rgba(0, 42, 50,1); width:200px; height:300px; margin-bottom: 50px'>
-                        <p style='text-align: center;'><img  width='60%' height="60%" :src='item.image'></p>
-                        <p style='text-align: center;'> <a :href='"http://localhost:8080/#/merch/"+item.title' style='text-align: center;'>{{item.title}}</a></p>
+                        <p style='text-align: center;'><img  v-if='item.image == null' width='40%' height="40%" :src='image_if_empty'><img  v-if='item.image == ""' width='40%' height="40%" :src='image_if_empty'><img  v-else width='60%' height="60%" :src='item.image'></p>
+                        <p style='text-align: center;'> <a  :href='"http://localhost:8080/#/merch/"+item.title' style='text-align: center;'>{{item.title}}</a></p>
+                        <p style='text-align: center;' v-if='item.image == ""'>(нет фото)</p>
                         <p style='text-align: center;'>{{item.cost}} руб</p>
                         <p style='text-align: center;'><a :href='"http://localhost:8080/#/merch/"+item.title'><button style='margin-left:10px;border-color: black; background-color: #001e24;' type="button" class="btn btn-primary">Подробнее</button></a></p>
                     </div>
@@ -29,6 +30,7 @@ export default {
       wikis: [],
       path: 'http://localhost:8080/#/wiki',
       images: '',
+      image_if_empty: 'https://i.yapx.ru/LvD9a.png',
     };
   },
     methods: {

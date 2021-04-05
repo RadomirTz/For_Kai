@@ -8,6 +8,7 @@ import Merch from '@/components/Merch';
 import View from '@/components/View';
 import Merch_str from '@/components/Merch_str';
 import Contacts from '@/components/Contacts';
+import not_found from '@/components/not_found';
 
 Vue.use(Router);
 
@@ -22,6 +23,10 @@ export default new Router({
       path: '/',
       name: 'Main',
       component: Main,
+    },
+    {
+      path: '*',
+      component: not_found,
     },
     {
       path: '/wiki',
