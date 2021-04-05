@@ -4,3 +4,6 @@
 В другом окне перейдите по C:\Users\Radomir\Desktop\kai\For_Kai\client
 И пропишите npm run dev
 
+При возникновении ошибок попробуйте эти команды:
+npm audit fix
+npm install webpack-dev-server -g
