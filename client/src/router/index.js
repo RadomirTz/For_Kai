@@ -57,6 +57,11 @@ export default new Router({
       path: '/contacts',
       name: 'Contacts',
       component: Contacts,
+    },
+    {
+      path: '/wiki/*',
+      name: 'Wiki_Dont_have',
+      component: not_found,
     }
     
   ],
